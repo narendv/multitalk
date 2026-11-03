@@ -1,0 +1,7 @@
+Your output must be pairs of step number, its violation or infeasibility. If a step has no issues, write 'no violations' for that step. Do not write anything else in the output. For example, if step 3 and 7 violate some rules or constraints, the output must look like this:
+"""
+Step-by-step Instructions:\n 
+3: violation description of this step # Details
+7: violation description of this step # Details
+"""
+If all the steps are correct, the output strictly must be the phrase 'Feasible Plan!' only.

@@ -1,0 +1,33 @@
+# Every value here matches the built-in default. Copy this file to change settings:
+#   multitalk --config configs/my_config.yaml plan ...
+max_iterations: 10
+output_dir: runs
+
+llm:
+  model: gpt-4o
+  temperature: 0.0
+  top_p: 1.0
+  max_tokens: 512
+
+# All enabled is the full framework. Disabling them gives ablated variants.
+checks:
+  bounds: true
+  analyzer: true
+  simulator: true
+
+sim:
+  x_bounds: [-0.15, 0.45]
+  y_bounds: [-0.62, 0.62]
+  min_place_radius: 0.254
+  max_place_radius: 0.762
+  max_jacobian_condition: 40.0
+  max_target_error: 0.15
+
+perception:
+  target_objects: "sugar box . mustard bottle . food can . apple . wooden cube ."
+  box_threshold: 0.50
+  text_threshold: 0.35
+  min_object_points: 700
+  dino_weights: weights/groundingdino_swint_ogc.pth
+  sam_weights: weights/mobile_sam.pt
+  sam_backbone: vit_t

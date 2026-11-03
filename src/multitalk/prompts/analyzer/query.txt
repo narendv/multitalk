@@ -1,0 +1,14 @@
+High-level instruction given to the planner: {task}
+Planner's output:
+{plan}
+Further, the planner also asked the user some questions to clarify the plan. The questions and the user's responses are as follows:
+{clarifications}
+Observed environment:
+```
+{objects}
+```
+Observed semantic relations:
+```
+{semantic_relations}
+```
+The output is:

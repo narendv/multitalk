@@ -1,0 +1,5 @@
+The following are the answers to the questions you asked to clarify the high-level task:
+{feedback}
+Using these answers, you have two options:
+- In case you need more clarification, follow the previously defined questioning format. Only ask the absolutely necessary questions.
+- In case you are confident enough to generate the plan, use the output format as defined previously.

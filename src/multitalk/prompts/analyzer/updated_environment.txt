@@ -1,0 +1,2 @@
+The perception system has updated the environment information. This is new observed environment:
+{objects}

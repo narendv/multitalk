@@ -1,0 +1,7 @@
+The perception system has revised the environment information. The new environment information is as follows:
+"""
+{objects}
+"""
+Taking them into consideration, you have two options:
+- In case you need more clarification on the task, pose questions following the previously defined questioning format. Only ask the absolutely necessary questions.
+- In case you are confident enough to generate the plan, use the output format as defined previously.

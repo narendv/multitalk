@@ -1,0 +1,3 @@
+Your instructions have been accepted by the user and passed on to the simulator for execution. The simulator has returned the following error:
+{feedback}
+Take them into consideration and revise your instructions accordingly. Use the same output format as defined previously.

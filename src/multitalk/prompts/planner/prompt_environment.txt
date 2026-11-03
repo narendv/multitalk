@@ -1,0 +1,9 @@
+The franka arm's base is at origin. The environment is a 2D square top table with the coordinate bounds $-0.15 < x < 0.45$, $-0.62 < y < 0.62$, and $z \geq 0$.
+Format of observed environment as a python dictionary:
+```
+{<object_name>: ((<bounding box length>, <bounding box width>, <bounding box height>), <bounding box center coordinates>)}
+```
+Example:
+```
+{'cube':((0.1,0.1,0.0),(0.25,0.25,0.0)), 'bottle':((0.1,0.1,0.0),(0.34,0.35,0.0))}
+```

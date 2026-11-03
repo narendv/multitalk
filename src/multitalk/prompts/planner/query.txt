@@ -1,0 +1,8 @@
+For the following objects, decide if you can give step-by-step instructions or would like to ask questions for clarification or need to command the perception module to re-scan the environment.
+In either case, use the output prompt format specified earlier.
+Enviornment:
+```
+{objects}
+```
+High-level Instruction: {task}
+Output:

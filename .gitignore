@@ -1,0 +1,9 @@
+.env
+__pycache__/
+*.pyc
+*.egg-info/
+build/
+dist/
+runs/
+weights/
+MUJOCO_LOG.TXT

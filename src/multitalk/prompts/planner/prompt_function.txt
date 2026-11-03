@@ -1,0 +1,8 @@
+Necessary and sufficient robot actions are defined as follows:
+- move(<desired_coordinates>): Move object to desired location
+- grasp(<object_coordinates>): Grab the object at the given location
+- home(): return the franka arm to base position after completing the task
+Additional Instructions regarding these actions:
+- Only one object can be grasped at a time
+- An object must be grasped before moving it to another location
+- Once the robot returns to home position, no action can be performed

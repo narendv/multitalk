@@ -1,0 +1,13 @@
+The franka arm's base is at origin. The environment is a 2D square top table.
+Format of the observed environment as a python dictionary:
+```
+{'environment': {<object_name>: ((<bounding box length>, <bounding box width>, <bounding box height>), <bounding box center coordinates>)}}
+```
+Observed semantic relations:
+```
+[(<object_1>, <object_2>), <relationship>),(<object_3>, <object_4>), <relationship>), ...]
+```
+Necessary and sufficient object relationships:
+- (<object_1>, <object_2>), 'on'): object_2 is on object_1
+- (<object_1>, <object_2>), 'in'): object_2 is in object_1
+- (<object_1>, <object_2>), 'near'): object_2 is near object_1

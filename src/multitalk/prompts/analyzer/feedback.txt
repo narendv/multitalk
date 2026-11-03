@@ -1,0 +1,5 @@
+Based on the feedback you provided, the planning agent has updated its instructions. The new instructions are as follows:
+{plan}
+Further, the planner also asked the user some questions to clarify the plan. The questions and the user's responses are as follows:
+{clarifications}
+Check for violation is this updated plan and generate feedback for the same. After your feedback, there might be still problems in the plan. Use the same output format as defined previously. The new feedback is:

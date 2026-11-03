@@ -1,0 +1,44 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "multitalk"
+version = "0.1.0"
+description = "MultiTalk: introspective and extrospective dialogue for human-environment-LLM alignment"
+readme = "README.md"
+requires-python = ">=3.10,<3.11"
+dependencies = [
+    "numpy>=1.26,<2",
+    "mujoco==3.17.0",
+    "pin==2.7.0",
+    "ndcurves==1.4.1",
+    "proxsuite==0.8.2",
+    "openai>=1.14",
+    "python-dotenv",
+    "pyyaml",
+]
+
+[project.optional-dependencies]
+# Install PyTorch separately first; see the README.
+perception = [
+    "torch==2.2.1",
+    "torchvision==0.17.1",
+    "open3d==0.18.0",
+    "opencv-python==4.9.0.80",
+    "transformers==4.33.2",
+    "timm",
+    "groundingdino-py==0.4.0",
+    "mobile_sam @ git+https://github.com/ChaoningZhang/MobileSAM",
+]
+
+llama = ["ollama"]
+
+[project.scripts]
+multitalk = "multitalk.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.setuptools.package-data]
+multitalk = ["prompts/**/*.txt", "assets/**/*"]
