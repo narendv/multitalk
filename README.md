@@ -10,6 +10,11 @@ simulator supply feedback from outside the LLMs.
 > Real-robot execution is not included yet. Plans are saved as text after passing the
 > simulator.
 
+> **Reproducibility:** The experiments in the paper were run with an earlier version of
+> GPT-4o that OpenAI has since deprecated. This code uses `gpt-4o`, which points to OpenAI's
+> current GPT-4o version, so results may differ from those reported in the paper and are not
+> exactly reproducible.
+
 ## Install
 
 Requires Python 3.10. PyTorch is only needed for perception.
